@@ -1,0 +1,8 @@
+[package]
+name = "friendbook-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+sqlx = { version = "0.9.0", features = ["migrate", "runtime-tokio", "sqlite", "derive"] }
